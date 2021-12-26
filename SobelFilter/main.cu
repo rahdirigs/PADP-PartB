@@ -67,7 +67,7 @@ __global__ void sobel_filter(unsigned char *img, unsigned char *omg, unsigned in
     if (gy < 0.0) {
       gy *= -1.0;
     }
-    omg[y * width + x] = gy;
+    omg[y * width + x] += gy;
   }
 }
 
