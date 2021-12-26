@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nvcc -lopencv_core -lopencv_imgproc -lopencv_imgcodecs main.cu -o main
